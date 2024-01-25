@@ -23,5 +23,7 @@ fun main() {
 
     println(apel > mangga)
     println(apel < mangga)
+    println(apel >= mangga)
+    println(apel <= mangga)
 
 }

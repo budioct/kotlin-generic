@@ -17,7 +17,8 @@ class StringLogReadWriteProperty(var data: String) : ReadWriteProperty<Any, Stri
 
 class Person(param: String){
 
-    var name: String by StringLogReadWriteProperty(param) // set ReadWriteProperty Interface
+    // ketika kita panggil Person class ini akan selalu akses class StringLogReadWriteProperty
+    var name: String by StringLogReadWriteProperty(param) // delegasi
 }
 
 fun main() {

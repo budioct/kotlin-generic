@@ -10,6 +10,14 @@ fun copy(from: Container<out Any>, to: Container<Any>){
 
 
 fun main() {
+
+    /**
+     * Type Projection
+     * ● Kita bisa melakukan type projection, yaitu menambahkan informasi covariant atau contravariant di parameter function, ini memaksa isi function untuk melakukan pengecekan
+     * ● Jika covariant, kita tidak boleh mengubah data generic di object
+     * ● Jika contravariant, kita tidak boleh ngambil data generic object
+     */
+
     val data1 = Container("Data 1")
     val data2 : Container<Any> = Container("Data 2") // supaya bisa di terima oleh param to.. kita harus ekplisit set reference container
 
